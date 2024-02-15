@@ -55,6 +55,11 @@ NPM Moony
 npm config set @moony:registry http://localhost:4873
 ```
 
+Create an user
+```bash
+npm adduser --registry http://localhost:4873/
+```
+
 This command sets the registry URL for npm to `http://localhost:4873`, ensuring that npm commands interact with your local registry instead of the public npm registry.
 
 By following these steps, you can set up and use a local npm registry using Docker, enabling you to publish and install npm packages locally. Adjust the commands as needed based on your specific requirements and environment.
