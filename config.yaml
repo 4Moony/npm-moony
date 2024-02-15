@@ -1,0 +1,9 @@
+storage: /verdaccio/storage
+auth:
+  htpasswd:
+    file: /verdaccio/conf/htpasswd
+packages:
+  '@*/*':
+    access: $all
+    publish: $authenticated
+    proxy: npmjs
