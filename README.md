@@ -13,30 +13,12 @@ This project is based on Verdaccio, a lightweight npm registry suitable for runn
 
 ---
 ### Building the Docker Image with Compose
+
+This command builds the Docker image and starts the container in detached mode. The `-d` flag runs the container in the background, allowing you to continue using the terminal.
+
 ```bash
 docker-compose up -d
 ```
----
-
-### Building the Docker Image
-
-To build the Docker image, run the following command in your terminal:
-
-```bash
-docker build -t npm-moony .
-```
-
-This command builds a Docker image named `npm-local` using the Dockerfile in the current directory.
-
-### Running the Docker Container
-
-After building the Docker image, you can run a Docker container using the following command:
-
-```bash
-docker run -p 4873:4873 -d npm-moony
-```
-
-This command starts a Docker container based on the `npm-moony` image, exposing port `4873` on your local machine. The container runs in detached mode (`-d`), allowing you to continue using your terminal.
 
 ### Configuring npm to Use the Local Registry
 
