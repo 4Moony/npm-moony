@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  npm-moony:
+    container_name: npm-moony
+    build: .
+    ports:
+      - "4873:4873"
