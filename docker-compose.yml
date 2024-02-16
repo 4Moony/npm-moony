@@ -6,3 +6,9 @@ services:
     build: .
     ports:
       - "4873:4873"
+    volumes:
+      - verdaccio_data:/verdaccio
+
+volumes:
+  verdaccio_data:
+    driver: local
