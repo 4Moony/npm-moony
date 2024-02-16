@@ -12,14 +12,11 @@ Before running this project, ensure you have the following prerequisites install
 This project is based on Verdaccio, a lightweight npm registry suitable for running on your local machine or in your private network. For more information about Verdaccio, please refer to the [official documentation](https://verdaccio.org/docs/cli-registry/).
 
 ---
-
-### Building the Docker Image
-
-To build the Docker image, run the following command in your terminal:
-
+### Building the Docker Image with Compose
 ```bash
-docker build -t npm-moony .
+docker-compose up -d
 ```
+---
 
 ### Building the Docker Image
 
