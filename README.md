@@ -61,6 +61,7 @@ By following these steps, you can set up and use a local npm registry using Dock
    Publish the npm package to your local server using the `npm publish` command. Make sure you're in the root directory of the package before executing the command.
    ```sh
    cd /path/to/your/package
+   npm login --registry=http://localhost:4873
    npm publish --registry=http://localhost:4873
    ```
    This command uploads the package to the local Verdaccio server, making it available for installation by other projects.
